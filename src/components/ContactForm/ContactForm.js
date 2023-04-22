@@ -9,7 +9,7 @@ import { Button, Input, Label, Sector, Title } from './ContactForm.styled';
 function ContactForm() {
   const dispatch = useDispatch();
   const contacts = useSelector(contactsSelectors.getContacts);
-  const isLoading = useSelector(contactsSelectors.getLoading);
+  //const isLoading = useSelector(contactsSelectors.getLoading);
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
@@ -96,8 +96,7 @@ function ContactForm() {
                 placeholder="123-45-67"
               />
             </Label>
-            {!isLoading && <Button value="Submit">Add contact</Button>}
-            {isLoading && <LoaderComponent />}
+           <Button value="Submit">Add contact</Button>
           </form>
         </Sector>
       </Title>
