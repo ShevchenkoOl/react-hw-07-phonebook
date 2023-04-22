@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { contactsOperations, contactsSelectors } from '../../redux/contacts';
 //import Cleave from 'cleave.js/react';
 //import { toast } from 'react-toastify';
-import LoaderComponent from '../LoaderComponent';
+//import LoaderComponent from '../LoaderComponent';
 import { Button, Input, Label, Sector, Title } from './ContactForm.styled';
 
 function ContactForm() {
