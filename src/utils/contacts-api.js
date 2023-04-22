@@ -1,6 +1,8 @@
 import axios from 'axios';
+ //import contacts from '../../db.json';
 
-axios.defaults.baseURL = 'http://localhost:3000';
+//axios.defaults.baseURL = 'http://localhost:3000';
+axios.defaults.baseURL = 'http://localhost:3000/react-hw-07-phonebook/contacts';
 
 export function fetchContacts() {
   return axios.get('/contacts');
