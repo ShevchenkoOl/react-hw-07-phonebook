@@ -19,7 +19,7 @@ function ContactList() {
         <List>
           <AnimatePresence>
             {visibleContacts.map(({ id, name, number }) => (
-              <Item>
+              <Item key={id}>
                 <p>
                   {name}: {number}
                 </p>
