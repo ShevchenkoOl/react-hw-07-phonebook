@@ -10,6 +10,8 @@ import {
     deleteContactError,
   } from './contacts-actions';
   import * as contactsAPI from '../../utils/contacts-api';
+// import axios from 'axios';
+// import { createAsyncThunk } from '@reduxjs/toolkit';
   
   export const fetchContacts = () => dispatch => {
     dispatch(fetchContactsRequest());
@@ -33,7 +35,7 @@ import {
       .then(({ data }) => dispatch(addContactSuccess(data)))
       .catch(error => dispatch(addContactError(error)));
   };
-  
+
   export const deleteContact = id => dispatch => {
     dispatch(deleteContactRequest());
   

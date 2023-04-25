@@ -44,6 +44,10 @@ const error = createReducer(null, {
   [deleteContactRequest]: () => null,
 });
 
+// const rootReducer = combineReducers({
+//   contacts: contactsReducer,
+// });
+
 export default combineReducers({
   items,
   filter,
