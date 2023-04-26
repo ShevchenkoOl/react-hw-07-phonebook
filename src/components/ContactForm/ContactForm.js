@@ -1,15 +1,11 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { contactsOperations, contactsSelectors } from '../../redux/contacts';
-//import Cleave from 'cleave.js/react';
-//import { toast } from 'react-toastify';
-//import LoaderComponent from '../LoaderComponent';
+import { contactsOperations, contactsSelectors } from '../../redux/contacts'
 import { Button, Input, Label, Sector, Title } from './ContactForm.styled';
 
 function ContactForm() {
   const dispatch = useDispatch();
   const contacts = useSelector(contactsSelectors.getContacts);
-  //const isLoading = useSelector(contactsSelectors.getLoading);
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
